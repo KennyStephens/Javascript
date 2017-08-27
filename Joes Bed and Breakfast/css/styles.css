@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+    background-color: white;
+    font-family: 'Mukta Mahee', sans-serif;
+}
+
+header{
+    background-image: url(../images/header-image.jpg);
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+    
+}
+
+
+
+#header{
+    padding: 30px;
+    font-size: 4em;
+    color:white;
+    text-shadow: 5px 5px 5px black;
+   
+}
+
+#subheader{
+    color:white;
+    padding-left: 30px;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+.wrapper{
+    margin-left: 5%;
+    max-width: 90%;
+    background-color: #e5e5e5;
+    padding-bottom: 20px;
+    
+}
+
+.wrapper h1{
+    font-size: 1.7em;
+    margin: 20px 0px 20px 2%;
+    padding-top: 20px;
+}
+
+#message{
+    margin-left: 3%;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.wrapper h2{
+    margin-left: 5%;
+    font-weight: bold;
+
+}
+
+.wrapper ul{
+    margin-left: 8%;
+    margin-top: 10px;
+}
+
+.wrapper ul li{
+    margin: 7px;
+    list-style-type: circle;
+}
+
+#date{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color:blanchedalmond;
+    padding: 15px;
+    font-weight: 500;
+}

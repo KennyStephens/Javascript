@@ -1,0 +1,40 @@
+/*jslint browser:true */
+"use strict";
+
+var navGet = document.querySelectorAll('ul#primaryNavigation li a');
+console.log(navGet);
+
+var link = navGet[0].getAttribute('href');
+console.log(link);
+
+var linkText = navGet[0].text;
+console.log(linkText);
+
+
+function menuDuplication() {
+    var i;
+    for (i = 0; i < cars.length; i++) {
+        
+    }
+}
+
+
+
+
+
+var unorderedList = document.createElement("UL");
+var listItem1 = document.createElement("LI");
+var anchor1 = document.createElement("A");
+anchor1.setAttribute('href', link);
+anchor1.innerHTML = linkText;
+
+document.getElementById('smallNavArea').appendChild(unorderedList);
+unorderedList.appendChild(listItem1);
+listItem1.appendChild(anchor1);
+
+
+
+
+
+
+//Run loop and have it write every item in the navGet array

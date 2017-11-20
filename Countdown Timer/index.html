@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+
+    <title>Javascript Countdown Timer</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <h1>Javascript Countdown Timer</h1>
+    <!---Countdown Timer--->
+    <div class="countdown">
+
+        <h2>Fill out the fields below.</h2>
+        <br>
+
+        <p>Enter Month in Numerical Form (ie: 1-12)</p>
+        <input type="number" id="month" placeholder="Month">
+        <br>
+        <p>Enter Day of Month</p>
+        <input type="number" id="day" placeholder="Day">
+        <br>
+        <p>Enter Year (ie: yyyy)</p>
+        <input type="number" id="year" placeholder="Year">
+        <br>
+        <p>Enter Hour using 24 Clock (ie: 3pm = 15)</p>
+        <input type="number" id="hour" placeholder="Hour">
+        <br>
+        <p>Enter Minutes</p>
+        <input type="number" id="min" placeholder="Minutes">
+        <br>
+        <button type="button" class="button" onclick="countdownTimer();">Start Countdown</button>
+
+        <p id="countdown-output"></p>
+
+    </div>
+
+    <footer>
+        <p>Created by Kenneth Stephens</p>
+    </footer>
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+    background-color: white;
+    font-family: 'Mukta Mahee', sans-serif;
+}
+
+header{
+    background-image: url(../images/header-image.jpg);
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+    
+    
+    
+}
+
+
+
+#header{
+    padding: 30px;
+    font-size: 4em;
+    color:47360c;
+    text-shadow: 2px 2px 2px white;
+   
+}
+
+#subheader{
+    color:47360c;
+    padding-left: 30px;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px white;
+}
+
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 90%;
+    background-color: #e5e5e5;
+    padding-bottom: 20px;
+    
+}
+
+
+.wrapper h1{
+    font-size: 1.7em;
+    margin: 20px 0px 20px 2%;
+    padding-top: 20px;
+    color: 47360c;
+}
+
+
+.wrapper h2{
+    margin-left: 5%;
+    font-weight: bold;
+
+}
+
+.wrapper ul{
+    margin-left: 8%;
+    margin-top: 10px;
+}
+
+.wrapper ul li{
+    margin: 7px;
+    list-style-type: circle;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color:slategrey;
+    padding: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.pizzaWrapper{
+    margin-left: 2%;
+    background: #edfff0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pizzaWrapper h1{
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+button{
+    display:block;
+    margin: 5px 0 0 5px;
+    background: #877104;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+.crusts {
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+.toppings {
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+.sizes {
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+.eat {
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+.list{
+    margin-left: 2%;
+}
+
+.feedback{
+    height:75px;
+    background: lightgray;
+    margin-top:20px;
+}
+
+.feedback h1{
+    padding: 5px;
+}
+
+#feedback{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

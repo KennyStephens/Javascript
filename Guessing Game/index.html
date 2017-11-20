@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sherlock Holmes Book Store</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:400,500,600,700,800" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+    
+    <div id="header">
+        <h1></h1>
+    </div>
+    
+    <div id="subheader">
+        <h2></h2>
+    </div>
+
+</header>
+    
+<div class="wrapper">
+<h1>Let's see how well you can guess!</h1>
+
+
+<h2>These are some things I learned from this lesson:</h2>
+    
+<ul>
+    <li>How to generate a random number.</li>  
+    <li>About global variables.</li>
+    <li>How to dynamically generate image with Javascript.</li>
+    <li>How to do an 'on-click' event.</li>
+    <li>Using switches.</li>
+</ul>
+   <br> 
+    
+<!---Start of Game--->
+<div class="gameWrapper">
+    <div class="inputArea">
+    
+         <form>
+             Enter Guess Here: <small>(Between 1 and 15)</small><br>
+             <input type="number" placeholder="Your Guess" id="userInput">
+         </form>
+
+         <button onclick="guessingGame(); counter++;">Submit Guess</button>
+     
+    </div> 
+    
+    <div class="responseArea">
+        <div id="response"></div>
+        
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    <div class="ribbons">
+    
+    <img src="images/blueribbon.png" id="first" style="display:none; margin:auto; padding-top: 4%;">
+    <img src="images/redribbon.png" id="second" style="display:none; margin: auto; padding-top: 4%;">
+    <img src="images/silverribbon.png" id="third" style="display:none; margin: auto; padding-top: 4%;">
+        
+    <div id="ribbonAttempts"></div>
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div> <!---End of Game Wrapper--->
+</div> <!----End of Wrapper---->
+    
+
+    
+    
+<footer>
+<p>Made by Kenny Stephens © 2017</p>
+
+    
+</footer>
+    
+</body>
+    
+<script type="text/javascript" src="js/main.js"></script>
+    
+</html>

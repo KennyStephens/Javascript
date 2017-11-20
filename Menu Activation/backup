@@ -1,0 +1,83 @@
+// JavaScript Document
+/*jslint browser:true */
+"use strict";
+
+var locationCheck = location.href;
+console.log(locationCheck);
+
+//home page
+var homeArray = locationCheck.split(/[/,?]/);
+console.log(homeArray);
+
+var numberOfPartsHome = homeArray.length;
+console.log(numberOfPartsHome);
+
+var homePieceIWant = homeArray[numberOfPartsHome - 2];
+console.log("Home piece I want " + homePieceIWant);
+
+
+
+
+//location page
+var locationPageArray = locationCheck.split(/[#,/]/);
+console.log("------" + locationPageArray);
+
+var numberOfPartsLocation = locationPageArray.length;
+console.log(numberOfPartsLocation);
+
+var locationPieceIWant = locationPageArray[numberOfPartsLocation - 2];
+console.log("location piece i want " + locationPieceIWant);
+
+
+
+
+//drill page
+var drillArray = locationCheck.split('/');
+console.log(drillArray);
+
+var numberOfPartsDrill = drillArray.length;
+console.log(numberOfPartsDrill);
+
+var drillPieceIWant = drillArray[numberOfPartsDrill - 1];
+console.log("drill piece i want " + drillPieceIWant);
+
+
+//hammer page
+var hammerArray = locationCheck.split('/');
+console.log(hammerArray);
+
+var numberOfPartsHammer = hammerArray.length;
+console.log(numberOfPartsHammer);
+
+var hammerPieceIWant = hammerArray[numberOfPartsHammer - 1];
+console.log("hammer piece i want " + hammerPieceIWant);
+
+
+
+//find a match
+var menuAnchors = document.querySelectorAll("ul#mainmenu li a");
+console.log(menuAnchors);
+
+var i;
+for (i = 0; i < menuAnchors.length; i++) {
+    var myPage = menuAnchors[i].getAttribute("href").split(/[?,#]/);
+    console.log("my page: " + myPage);
+    console.log(hammerPieceIWant + " " + myPage)
+
+
+    if (hammerPieceIWant === myPage[0]) {
+
+        menuAnchors[i].parentNode.className = "active";
+        menuAnchors[i].parentNode.parentNode.parentNode.className = "parent";
+
+        console.log("we have a match");
+        alert("we have a match");
+    } else if (locationPieceIWant === myPage[0]) {
+        menuAnchors[i].parentNode.className = "parent";
+
+    } else if (homePieceIWant === myPage[0]) {
+        menuAnchors[i].parentNode.className = "parent";
+    } else {
+        menuAnchors[i].parentNode.className = "";
+    }
+} //end loop
